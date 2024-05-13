@@ -19,8 +19,8 @@ const mongoDbEnv = {
 };
 
 const nextAuthSchema = z.object({
-  url: z.string().url(),
-  urlInternal: z.string().url(),
+  url: z.string(),
+  urlInternal: z.string(),
   secret: z.string(),
 });
 
