@@ -15,6 +15,7 @@ export default function RootLayout({ children }: PropsWithChildren<{}>) {
   return (
     <html lang="en">
       <body>
+        {/* @ts-ignore */}
         <Provider>
           <div id="modal-root" />
           <div className="main">

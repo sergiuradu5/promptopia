@@ -153,7 +153,7 @@
 
 /* Modal Component */
 .modal {
-  @apply shadow-lg
+  @apply shadow-lg;
 }
 
 .modal::backdrop {

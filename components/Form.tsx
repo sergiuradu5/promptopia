@@ -1,4 +1,4 @@
-import { CreatePostDto } from "@custom-types/api/create-post.dto";
+import { CreatePostDto } from "@dtos/api/post.dto";
 import Link from "next/link";
 import { ChangeEvent, FormEvent } from "react";
 
