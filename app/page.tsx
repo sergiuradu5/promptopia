@@ -1,4 +1,5 @@
 import Feed from "@components/Feed";
+import Link from "next/link";
 import { Suspense } from "react";
 
 export default function Home() {
@@ -16,6 +17,11 @@ export default function Home() {
       <Suspense fallback={<h2>Loading...</h2>}>
         <Feed />
       </Suspense>
+      <button>VERCEL {process.env.VERCEL}</button>
+      <Link href={process.env.NEXTAUTH_URL || ""}>
+        {" "}
+        <button>NEXTAUTH_URL {process.env.NEXTAUTH_URL}</button>
+      </Link>
     </section>
   );
 }
